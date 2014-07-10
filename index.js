@@ -9,9 +9,9 @@ function PageShadow (book, opts) {
   if (!(this instanceof PageShadow)) return new PageShadow(book, opts);
   opts = opts || {}
   Object.keys(defaults || {}).forEach(function(key){
-  	if(!opts[key]){
-  		opts[key] = defaults[key]
-  	}
+    if(!opts[key]){
+      opts[key] = defaults[key]
+    }
   })
   this._book = book
   this._options = opts
@@ -25,6 +25,7 @@ PageShadow.prototype.setupEvents = function () {
 }
 
 PageShadow.prototype.buildShadow = function (leafElem, side, index) {
+
   var shadow = document.createElement('div')
   classes(shadow).add('pageshadow-container')
 
