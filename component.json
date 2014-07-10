@@ -1,0 +1,17 @@
+{
+  "name": "pageshadow",
+  "description": "shadows for pageturner book pages",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/emitter": "*",
+    "component/classes": "*"
+  },
+  "development": {},
+  "styles": [],
+  "files": [],
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
