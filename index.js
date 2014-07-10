@@ -24,22 +24,10 @@ PageShadow.prototype.setupEvents = function () {
   this._book.on('render:leaf', this.buildShadow.bind(this))
 }
 
-PageShadow.prototype.buildShadow = function (leafElem, side, index) {
-
+PageShadow.prototype.buildShadow = function (index, leafElem, side) {
   var shadow = document.createElement('div')
-  classes(shadow).add('pageshadow-container')
-
-  var left = document.createElement('div')
-  var right = document.createElement('div')
-
-  left(shadow).add('pageshadow-shadow')
-  right(shadow).add('pageshadow-shadow')
-  left(shadow).add('pageshadow-left')
-  right(shadow).add('pageshadow-right')
-
-  shadow.appendChild(left)
-  shadow.appendChild(right)
-
+  classes(shadow).add('pageshadow-shadow')
+  classes(shadow).add('pageshadow-' + side)
   leafElem.appendChild(shadow)
-  this.emit('render', shadow, index)
+  this.emit('render', shadow, index, side)
 }
