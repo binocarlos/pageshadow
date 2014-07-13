@@ -7,11 +7,11 @@
 
 .pageshadow-left{
 	left:49.8%;
-	background-color:rgba(0,0,0,0.35);
+	background-color:#cccccc;
 }
 
 .pageshadow-right{
 	left:50%;
-	background-color:rgba(0,0,0,0.2);
+	background-color:#888888;
 }
 
