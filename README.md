@@ -36,13 +36,13 @@ book.appendTo(document.querySelector('#container'))
 
 ## api
 
-### `var shadows = PageShadow(book, opts)`
+#### `var shadows = PageShadow(book, opts)`
 
 Create a new shadow module - pass a new [pageturner](https://github.com/binocarlos/pageturner) book to the constructor.
 
 ## events
 
-### `shadows.on('render', function(elem, index){})`
+#### `shadows.on('render', function(elem, index){})`
 
 A shadow element has been rendered to a page
 
